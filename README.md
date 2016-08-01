@@ -1,7 +1,7 @@
 # Web Development setup for mac with El Capitan
 
-This is my setup when i need to setup a new mac for webdev. 
-It includes the basic to get apache to work with multiple virtual hosts , multiple php versions with homebrew, git, mysql (mariadb). 
+This is my setup when i need to setup a new mac for webdev.
+It includes the basic to get apache to work with multiple virtual hosts , multiple php versions with homebrew, git, mysql (mariadb).
 
 If you are a total begginer i suggest using something like [MAMP](https://www.mamp.info/en/downloads/).
 
@@ -16,7 +16,7 @@ Credits
 
 ## Apps i use##
 
-  [1password](https://1password.com/downloads/), 
+  [1password](https://1password.com/downloads/),
   [Sketch](https://www.sketchapp.com/),
   [Atom](https://atom.io/),
   [Chrome](https://www.google.com/chrome/browser/desktop),
@@ -36,10 +36,20 @@ Credits
 
 ###> Atom Setup
 Atom menu > intall shell commands
-  
+
+Packages to install:
+
+* emmet
+* atom-beautify
+* atom-pigments
+* linter
+* file-icons
+* color-picker
+
+
 -
 
-###> Oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/) 
+###> Oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/)
 
 Abrir iterm2
 
@@ -63,7 +73,7 @@ Install [Honukai Theme](https://github.com/oskarkrawczyk/honukai-iterm-zsh)
 
 ###> Dock spacing
 
-Add an empty separator to the dock. 
+Add an empty separator to the dock.
 Enter the code below in the terminal. One for each separator.
 
 ```
@@ -77,7 +87,7 @@ killall Dock
 ```
 
 -
-###> iTerm2 or/and Terminal setup 
+###> iTerm2 or/and Terminal setup
 -
 
 ####-> Install command line tools
@@ -119,7 +129,7 @@ which git
 
 the response should be `/usr/local/bin/git`
 
-or check 
+or check
 
 ```
 git --version
@@ -140,7 +150,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 -
 ## WebDev Setup
 
-####-> Installing dnsmasq 
+####-> Installing dnsmasq
 
 This is a great little tool to that allows us to use wildcard subdomain names.
 
@@ -234,7 +244,7 @@ becomes
 ####-> Creating document root folder - www###
 
 
-Create a folder named www anywhere in the system. 
+Create a folder named www anywhere in the system.
 ```/Users/YOUR-USER/www ```
 is a good place
 
