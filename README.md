@@ -481,6 +481,25 @@ becomes
 LoadModule php5_module /usr/local/lib/libphp5.so
 #LoadModule php7_module /usr/local/lib/libphp7.so
 ```
+
+restart apache
+```
+sudo apachectl restart
+```
+
+now in the terminal you can do this to use the 5.6 version
+
+```
+sphp 56
+```
+
+or this to use 7.0
+
+```
+sphp 70
+```
+
+
 -
 ## Install MariaDB with Brew:
 
