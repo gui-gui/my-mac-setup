@@ -79,7 +79,6 @@ killall Dock
 -
 
 ####-> Install command line tools
--
 
 ```
 xcode-select --install
@@ -93,9 +92,10 @@ xcode-select --install
 brew --version
 brew doctor
 ```
+-
 
 ####-> Install Git
--
+
 
 ```
 brew install git
@@ -122,9 +122,9 @@ or check
 ```
 git --version
 ```
-
-####-> Generate SSH key
 -
+####-> Generate SSH key
+
 
 Follow this link and generate it
 
@@ -135,11 +135,10 @@ To copy the generated ssh key to the clipboard
 ```
 pbcopy < ~/.ssh/id_rsa.pub
 ```
-
+-
 ##- WebDev Setup
 
 ####-> Installing dnsmasq 
--
 
 This is a great little tool to that allows us to use wildcard subdomain names.
 
@@ -155,7 +154,6 @@ However, that creates a problem. When you have each site in a folder, it’s mor
 * http://client1.dev
 * http://client2.dev
 * http://client3.dev
-
 
 We can accomplish this by placing all three sites in our /private/etc/hosts file, but then we need to keep adding entries every time we add a new site. dnsmasq allows us to do this by interrupting each request that ends with .dev and forwarding it to a designated IP address (127.0.0.1 in our case).
 
@@ -189,9 +187,8 @@ That’s it. Test it out by visiting [http://localhost](http://localhost) in you
 You should also try [http://home.dev](http://home.dev), which should work since dnsmasq is pointing all *.dev domains to the local IP. You can try [http://ANYTHING.dev](http://ANYTHING.dev)
 as well.
 
-
-####-> apache + php
 -
+####-> apache + php
 
 Apache will serve up sites as is, but there are a few quick changes we need to make to the configuration files before we are ready to go. Using your favorite text editor, open up `/private/etc/apache2/httpd.conf`
 
@@ -231,9 +228,9 @@ becomes
 160  LoadModule vhost_alias_module libexec/apache2/mod_vhost_alias.so
 161  LoadModule negotiation_module libexec/apache2/mod_negotiation.so
 ```
-
-####-> Creating document root folder - www###
 -
+####-> Creating document root folder - www###
+
 
 Create a folder named www anywhere in the system. 
 ```/Users/YOUR-USER/www ```
@@ -263,9 +260,9 @@ In that same <Directory> block you will find an AllowOverride setting, this shou
 AllowOverride All
 ```
 
-
-####-> User & Group###
 -
+####-> User & Group###
+
 
 Now we have the Apache configuration pointing to a Sites folder in our home directory. One problem still exists, however. By default, apache runs as the user ```_www``` and group ```_www```. This will cause permission problems when trying to access files in our home directory. About a third of the way down the ```httpd.conf``` file there are two settings to set the User and Group Apache will run under. Change these to match your user account (replace your_user with your real username), with a group of staff:
 
@@ -274,8 +271,8 @@ User your_user
 Group staff
 ```
 
-####-> PHP 7.0 Additional Changes####
 -
+####-> PHP 7.0 Additional Changes####
 
 Although this is not needed for PHP 5.X, it is needed for PHP 7.0 and as we cover that below it's safer to just add it now. So scroll down until you see something like:
 
@@ -309,8 +306,8 @@ and replace it with this:
 </IfModule>
 ```
 
-####-> Multiple hosts####
 -
+####-> Multiple hosts####
 
 Overwriting the document root folder is easy, and makes it possible to use wildcards to point to specific sites inside your documment root folder. On line 500 in Yosemite/El Capitan, in order to allow us to add multiple websites to Apache:
 
