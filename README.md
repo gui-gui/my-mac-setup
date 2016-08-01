@@ -1,9 +1,11 @@
 # Web Development setup for mac with El Capitan
 
 This is my setup when i need to setup a new mac for webdev. 
-It includes the basic to get apache to work with multiple virtual hosts , multiple php versions with homebrew, git, mysql (mariadb). Use at your own risk.
+It includes the basic to get apache to work with multiple virtual hosts , multiple php versions with homebrew, git, mysql (mariadb). 
 
-This is compiled from pieces of some great tutorials i found online. This is only a personal guideline.
+If you are a total begginer i suggest using something like [MAMP](https://www.mamp.info/en/downloads/).
+
+This is compiled from pieces of some great tutorials i found online. I suggest that you read and watch the links below, as they can have additional information that was not essencial for me, but might be helpful. This guide is only a personal guideline. Use at your own risk.
 
 Credits
 * [Mallinson osx-web-development](https://mallinson.ca/osx-web-development/)
@@ -12,10 +14,10 @@ Credits
 * [How to run multiple PHP versions simultaneously](https://medium.com/@wvervuurt/how-to-run-multiple-php-versions-simultaneously-under-os-x-el-capitan-using-standard-apache-98351f4cec67#.rfalrc99o)
 
 
-## Apps##
+## Apps i use##
 
-  [1password](https://1password.com/downloads/), 
-  [Sketch](https://www.sketchapp.com/),
+  [1password - paid](https://1password.com/downloads/), 
+  [Sketch - paid](https://www.sketchapp.com/),
   [Atom](https://atom.io/),
   [Chrome](https://www.google.com/chrome/browser/desktop),
   [Firefox](https://www.mozilla.org/en-US/firefox/new/),
@@ -24,7 +26,7 @@ Credits
   [SequelPro](http://www.sequelpro.com),
   [SourceTree](https://www.sourcetreeapp.com/download/),
   [Clipmenu](http://www.clipmenu.com/),
-  [Codekit](https://incident57.com/codekit/),
+  [Codekit - paid](https://incident57.com/codekit/),
   [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
   [Slack](https://slack.com/downloads),
   [Whatsapp](https://www.whatsapp.com/download/),
