@@ -1,4 +1,4 @@
-# WEB Development setup for new mac with El Capitan
+# Web Development setup for mac with El Capitan
 
 This is my setup when i need to setup a new mac for webdev. 
 It includes the basic to get apache to work with multiple virtual hosts , multiple php versions with homebrew, git, mysql (mariadb). Use at your own risk.
