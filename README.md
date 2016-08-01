@@ -74,8 +74,9 @@ Reset the dock
 killall Dock
 ```
 
-
+-
 ###> iTerm2 or/and Terminal setup 
+-
 
 ####-> Install command line tools
 -
@@ -135,8 +136,9 @@ To copy the generated ssh key to the clipboard
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
+##- WebDev Setup
 
-####-> Instalando dnsmasq 
+####-> Installing dnsmasq 
 -
 
 This is a great little tool to that allows us to use wildcard subdomain names.
