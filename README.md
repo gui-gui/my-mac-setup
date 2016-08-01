@@ -136,7 +136,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 
-####--> Instalando dnsmasq 
+####-> Instalando dnsmasq 
 -
 
 This is a great little tool to that allows us to use wildcard subdomain names.
@@ -230,7 +230,7 @@ becomes
 161  LoadModule negotiation_module libexec/apache2/mod_negotiation.so
 ```
 
-####--> Creating document root folder - www###
+####-> Creating document root folder - www###
 -
 
 Create a folder named www anywhere in the system. 
