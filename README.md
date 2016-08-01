@@ -16,34 +16,20 @@ Credits
 
 ## Apps i use##
 
-  [1password - paid](https://1password.com/downloads/), 
-  
-  [Sketch - paid](https://www.sketchapp.com/),
-  
+  [1password](https://1password.com/downloads/), 
+  [Sketch](https://www.sketchapp.com/),
   [Atom](https://atom.io/),
-  
   [Chrome](https://www.google.com/chrome/browser/desktop),
-  
   [Firefox](https://www.mozilla.org/en-US/firefox/new/),
-  
   [iTerm2](https://www.iterm2.com),
-  
   [CyberDuck](https://cyberduck.io/),
-  
   [SequelPro](http://www.sequelpro.com),
-  
   [SourceTree](https://www.sourcetreeapp.com/download/),
-  
   [Clipmenu](http://www.clipmenu.com/),
-  
-  [Codekit - paid](https://incident57.com/codekit/),
-  
+  [Codekit](https://incident57.com/codekit/),
   [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
-  
   [Slack](https://slack.com/downloads),
-  
   [Whatsapp](https://www.whatsapp.com/download/),
-
   [Skype](https://www.skype.com/en/)
 
 -
