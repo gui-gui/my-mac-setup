@@ -431,7 +431,8 @@ save and restart apache
 sudo apachectl restart
 ```
 
-check the php version with phpinfo();
+check the php version with `$ php --version` or  a file with `<?php phpinfo();`
+
 -
 ###> PHP Switcher Script ##
 
