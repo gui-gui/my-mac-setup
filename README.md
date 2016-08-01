@@ -523,16 +523,14 @@ or, if you added the aliases at the beggining you can use this
 rundb
 ```
 
-You should get some positive feedback on that action:
+You should get some positive feedback running one of commands above:
 
 ```
 Starting MySQL
 . SUCCESS!
 ```
 
-I use sequelpro to connect to the database
-
-default database credentials
+I use sequelpro to connect to the database, the default database credentials for mariadb installed via homebrew are:
 
 ```
 host: 127.0.0.1
