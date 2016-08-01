@@ -503,6 +503,8 @@ sphp 70
 -
 ## Install MariaDB with Brew:
 
+I use [MariaDB](https://mariadb.org/) to have mysql and install it via homebrew
+
 ```
 brew install mariadb
 unset TMPDIR
@@ -513,6 +515,12 @@ After a successful installation, you can start the server:
 
 ```
 mysql.server start
+```
+
+or, if you added the aliases at the beggining you can use this
+
+```
+rundb
 ```
 
 You should get some positive feedback on that action:
@@ -531,5 +539,3 @@ host: 127.0.0.1
 user: root
 pass:
 ```
-
-[MariaDB](https://mariadb.org/)
