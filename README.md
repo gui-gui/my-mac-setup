@@ -12,7 +12,7 @@ Credits
 * [How to run multiple PHP versions simultaneously](https://medium.com/@wvervuurt/how-to-run-multiple-php-versions-simultaneously-under-os-x-el-capitan-using-standard-apache-98351f4cec67#.rfalrc99o)
 
 
-##- Apps##
+## Apps##
 
   [1password](https://1password.com/downloads/), 
   [Sketch](https://www.sketchapp.com/),
@@ -136,7 +136,7 @@ To copy the generated ssh key to the clipboard
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 -
-##- WebDev Setup
+## WebDev Setup
 
 ####-> Installing dnsmasq 
 
@@ -364,8 +364,8 @@ Then run the following to force Apache to load your new config files:
 ```
 sudo apachectl restart
 ```
-
-##- How to create a new project ##
+-
+## How to create a new project ##
 
 Inside the `www` folder create two folders: `sites` and `home`.
 
@@ -377,8 +377,8 @@ i.e.
 `Users/YOURUSER/www/sites/blog/wwwroot/index.php` would be accessible via [http://blog.sites.dev](http://blog.sites.dev)
 
 
-
-##- Multiple php versions with sphp ##
+-
+## Multiple php versions with sphp ##
 
 With HomeBrew installed it is a simple procedure to install PHP. We will proceed by installing both PHP 5.4, PHP 5.5, PHP 5.6, and PHP 7.0 and using a simple script to switch between them as we need. First though we have to tap into the PHP formulas and run the following commands.
 
@@ -432,9 +432,9 @@ sudo apachectl restart
 ```
 
 check the php version with phpinfo();
-
-###> PHP Switcher Script ##
 -
+###> PHP Switcher Script ##
+
 
 We hard-coded Apache to use PHP 5.4, but we really want to be able to switch between versions. Luckily, some industrious individual has already done the hard work for us and written a very handy little PHP switcher script.
 
@@ -446,9 +446,9 @@ curl -L https://raw.githubusercontent.com/conradkleinespel/sphp-osx/master/sphp 
 chmod +x ~/bin/sphp
 ```
 
-
-###> Updating the Path
 -
+###> Updating the Path
+
 
 Now we want to ensure this script is easily found when we are in the terminal, so we need add our `/Users/your_user/bin` directory to our path, as well as putting HomeBrew's preferred `/usr/local/bin` and `/usr/local/sbin` before OS X's default `/usr/bin` folder. Depending on your shell your using, you may need to add this line to `~/.profile`, `~/.bash_profile`, or `~/.zshrc`.
 
@@ -460,9 +460,9 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/Users/your_user/bin
 
 CLOSE THE TERMINAL AND OPEN IT AGAIN TO RELOAD THE PATH
 
-
-####-> Brew PHP LoadModule for `sphp` switcher
 -
+####-> Brew PHP LoadModule for `sphp` switcher
+
 
 Again, on `httpd.conf`
 
@@ -478,8 +478,8 @@ becomes
 LoadModule php5_module /usr/local/lib/libphp5.so
 #LoadModule php7_module /usr/local/lib/libphp7.so
 ```
-
-##- Install MariaDB with Brew:
+-
+## Install MariaDB with Brew:
 
 ```
 brew install mariadb
