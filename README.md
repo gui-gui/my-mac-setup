@@ -523,7 +523,7 @@ or, if you added the aliases at the beggining you can use this
 rundb
 ```
 
-You should get some positive feedback running one of commands above:
+You should get some positive feedback running one of the commands above:
 
 ```
 Starting MySQL
