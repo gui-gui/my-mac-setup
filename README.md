@@ -529,7 +529,7 @@ default database credentials
 ```
 host: 127.0.0.1
 user: root
-pass: *empty*
+pass:
 ```
 
 [MariaDB](https://mariadb.org/)
