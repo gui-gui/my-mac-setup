@@ -1,3 +1,17 @@
+THIS IS FOR OSX EL CAPITAN
+
+This is my setup when i need to setup a new mac for webdev. 
+It includes the basic to get apache to work with multiple virtual hosts, multiple php versions with homebrew, git, mysql (mariadb). Use at your own risk.
+
+This is compiled from pieces of some great tutorials i found online. This is only a personal guideline.
+
+Credits
+[Mallinsos osx-web-development](https://mallinson.ca/osx-web-development/)
+[Get Grav Apache with multiple php versions](https://getgrav.org/blog/mac-os-x-apache-setup-multiple-php-versions)
+[Set Up OS X For Web Development in 10 Minutes](https://www.youtube.com/watch?v=bjgZ93oEZF0)
+[How to run multiple PHP versions simultaneously](https://medium.com/@wvervuurt/how-to-run-multiple-php-versions-simultaneously-under-os-x-el-capitan-using-standard-apache-98351f4cec67#.rfalrc99o)
+
+
 ## Apps##
 
   [1password](https://1password.com/downloads/), 
