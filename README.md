@@ -31,6 +31,7 @@ Credits
   [Slack](https://slack.com/downloads),
   [Whatsapp](https://www.whatsapp.com/download/),
   [Skype](https://www.skype.com/en/)
+  [Spotify](https://www.spotify.com/br/download/mac/)
 
 -
 
