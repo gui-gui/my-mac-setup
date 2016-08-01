@@ -6,13 +6,13 @@ It includes the basic to get apache to work with multiple virtual hosts , multip
 This is compiled from pieces of some great tutorials i found online. This is only a personal guideline.
 
 Credits
-* [Mallinsos osx-web-development](https://mallinson.ca/osx-web-development/)
+* [Mallinson osx-web-development](https://mallinson.ca/osx-web-development/)
 * [Get Grav Apache with multiple php versions](https://getgrav.org/blog/mac-os-x-apache-setup-multiple-php-versions)
 * [Set Up OS X For Web Development in 10 Minutes](https://www.youtube.com/watch?v=bjgZ93oEZF0)
 * [How to run multiple PHP versions simultaneously](https://medium.com/@wvervuurt/how-to-run-multiple-php-versions-simultaneously-under-os-x-el-capitan-using-standard-apache-98351f4cec67#.rfalrc99o)
 
 
-## Apps##
+##- Apps##
 
   [1password](https://1password.com/downloads/), 
   [Sketch](https://www.sketchapp.com/),
@@ -32,12 +32,12 @@ Credits
 
 -
 
-### Atom Setup
+###> Atom Setup
 Atom menu > intall shell commands
   
 -
 
-### Oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/) 
+###> Oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/) 
 
 Abrir iterm2
 
@@ -59,34 +59,32 @@ Install [Honukai Theme](https://github.com/oskarkrawczyk/honukai-iterm-zsh)
 
 -
 
-### Dock spacing
+###> Dock spacing
 
-add an empty space. As many as needed
+Add an empty separator to the dock. 
+Enter the code below in the terminal. One for each separator.
 
 ```
 defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
 ```
 
-reset dock
+Reset the dock
 
 ```
 killall Dock
 ```
 
-# _
 
-## Dev Setup ##
+###> iTerm2 or/and Terminal setup 
 
-
-Open terminal 
-
-#### Install command line tools
+####-> Install command line tools
 -
+
 ```
 xcode-select --install
 ```
 
-#### Install HomeBrew [http://brew.sh/](http://bew.sh)
+####-> Install HomeBrew [http://brew.sh/](http://bew.sh)
 -
 
 ```
@@ -95,7 +93,7 @@ brew --version
 brew doctor
 ```
 
-#### Install Git
+####-> Install Git
 -
 
 ```
@@ -124,7 +122,7 @@ or check
 git --version
 ```
 
-#### Generate SSH key
+####-> Generate SSH key
 -
 
 Follow this link and generate it
@@ -138,7 +136,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 
 
-#### Instalando dnsmasq 
+####-> Instalando dnsmasq 
 -
 
 This is a great little tool to that allows us to use wildcard subdomain names.
@@ -174,9 +172,8 @@ sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
 
 We’re now done with dnsmasq, and if all goes well, you’ll never need to think about it again. Now, to get Apache going.
 
-# -
 -
-### Apache httpd.conf
+###> Apache httpd.conf
 -
 
 Start Apache Forever :)
@@ -190,8 +187,8 @@ That’s it. Test it out by visiting [http://localhost](http://localhost) in you
 You should also try [http://home.dev](http://home.dev), which should work since dnsmasq is pointing all *.dev domains to the local IP. You can try [http://ANYTHING.dev](http://ANYTHING.dev)
 as well.
 
--
-#### apache + php
+
+####-> apache + php
 -
 
 Apache will serve up sites as is, but there are a few quick changes we need to make to the configuration files before we are ready to go. Using your favorite text editor, open up `/private/etc/apache2/httpd.conf`
@@ -207,8 +204,6 @@ becomes
 ```
 169  LoadModule php5_module libexec/apache2/libphp5.so
 ```
-
-##### *Yosemite & El Capitan Only*
 
 Starting with OS X 10.10 (Yosemite), Apple moved from Apache 2.2 to Apache 2.4, and that means there are a few additional changes we need to make. First, there is a directive that helps secure your machine by denying access to the entire file system by default. I’ll show you how to remove this directive, since I find that easier on a machine meant for development. The section of code runs from line 220 through 223. You can comment out (place ‘#’ in front of each line) or just remove this section.
 
@@ -235,7 +230,7 @@ becomes
 161  LoadModule negotiation_module libexec/apache2/mod_negotiation.so
 ```
 
-### Creating document root folder - www###
+###> Creating document root folder - www###
 -
 
 Create a folder named www anywhere in the system. 
@@ -267,7 +262,7 @@ AllowOverride All
 ```
 
 
-####User & Group###
+####-> User & Group###
 -
 
 Now we have the Apache configuration pointing to a Sites folder in our home directory. One problem still exists, however. By default, apache runs as the user ```_www``` and group ```_www```. This will cause permission problems when trying to access files in our home directory. About a third of the way down the ```httpd.conf``` file there are two settings to set the User and Group Apache will run under. Change these to match your user account (replace your_user with your real username), with a group of staff:
@@ -277,7 +272,7 @@ User your_user
 Group staff
 ```
 
-####PHP 7.0 Additional Changes####
+####-> PHP 7.0 Additional Changes####
 -
 
 Although this is not needed for PHP 5.X, it is needed for PHP 7.0 and as we cover that below it's safer to just add it now. So scroll down until you see something like:
@@ -312,7 +307,7 @@ and replace it with this:
 </IfModule>
 ```
 
-#### Multiple hosts####
+####-> Multiple hosts####
 -
 
 Overwriting the document root folder is easy, and makes it possible to use wildcards to point to specific sites inside your documment root folder. On line 500 in Yosemite/El Capitan, in order to allow us to add multiple websites to Apache:
@@ -332,10 +327,7 @@ becomes
 Save the file.
 
 
-This last change tells apache to load the information in the httpd-vhosts.conf file in the /private/etc/apache2/extra/ directory. 
-We need to edit that file. You can delete or comment out everything in that file, and replace it with the following:
-
-*Criar a pasta ```www``` em algum lugar no sistema para servir de base para todos os sites. Colocar seu PATH no codigo abaixo do ```httpd-vhosts.conf```*.
+This last change tells apache to load the information in the httpd-vhosts.conf file in the /private/etc/apache2/extra/ directory. We need to edit that file. You can delete or comment out everything in that file, and replace it with the following:
 
 
 ```
@@ -374,7 +366,7 @@ Then run the following to force Apache to load your new config files:
 sudo apachectl restart
 ```
 
-## How to create a new site ##
+##- How to create a new project ##
 
 Inside the `www` folder create two folders: `sites` and `home`.
 
@@ -387,7 +379,7 @@ i.e.
 
 
 
-## Multiple php versions with sphp ##
+##- Multiple php versions with sphp ##
 
 With HomeBrew installed it is a simple procedure to install PHP. We will proceed by installing both PHP 5.4, PHP 5.5, PHP 5.6, and PHP 7.0 and using a simple script to switch between them as we need. First though we have to tap into the PHP formulas and run the following commands.
 
@@ -416,8 +408,6 @@ brew install php70 --with-fpm
 brew install php70-mcrypt
 brew install php70-xdebug
 brew unlink php70
-
-
 ```
 
 Now we need to make apache use these php versions istead of the default one
@@ -444,7 +434,7 @@ sudo apachectl restart
 
 check the php version with phpinfo();
 
-### PHP Switcher Script ##
+###> PHP Switcher Script ##
 -
 
 We hard-coded Apache to use PHP 5.4, but we really want to be able to switch between versions. Luckily, some industrious individual has already done the hard work for us and written a very handy little PHP switcher script.
@@ -458,7 +448,7 @@ chmod +x ~/bin/sphp
 ```
 
 
-###Updating the Path
+###> Updating the Path
 -
 
 Now we want to ensure this script is easily found when we are in the terminal, so we need add our `/Users/your_user/bin` directory to our path, as well as putting HomeBrew's preferred `/usr/local/bin` and `/usr/local/sbin` before OS X's default `/usr/bin` folder. Depending on your shell your using, you may need to add this line to `~/.profile`, `~/.bash_profile`, or `~/.zshrc`.
@@ -472,7 +462,7 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH:/Users/your_user/bin
 CLOSE THE TERMINAL AND OPEN IT AGAIN TO RELOAD THE PATH
 
 
-#### Brew PHP LoadModule for `sphp` switcher
+####-> Brew PHP LoadModule for `sphp` switcher
 -
 
 Again, on `httpd.conf`
@@ -489,8 +479,8 @@ becomes
 LoadModule php5_module /usr/local/lib/libphp5.so
 #LoadModule php7_module /usr/local/lib/libphp7.so
 ```
-# _
-## Install MariaDB with Brew:
+
+##- Install MariaDB with Brew:
 
 ```
 brew install mariadb
