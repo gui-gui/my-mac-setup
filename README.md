@@ -102,15 +102,15 @@ brew doctor
 brew install git
 which git
 ```
-which git will give the git path, probably `/usr/bin/git`
+which git will give the current git path, probably `/usr/bin/git`
 
-change it to git-apple so that brew version is used
+change the current oneto git-apple so that brew version is used
 
 ```
 sudo mv /usr/bin/git /usr/bin/git-apple
 ```
 
-check again
+check git version again
 
 ```
 which git
@@ -137,9 +137,8 @@ To copy the generated ssh key to the clipboard
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-[More about setting up ssh for git](https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html)
 
-####Instalando dnsmasq 
+#### Instalando dnsmasq 
 -
 
 This is a great little tool to that allows us to use wildcard subdomain names.
@@ -179,6 +178,7 @@ We’re now done with dnsmasq, and if all goes well, you’ll never need to thin
 -
 ### Apache httpd.conf
 -
+
 Start Apache Forever :)
 
 ```
