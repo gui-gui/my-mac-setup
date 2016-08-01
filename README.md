@@ -526,10 +526,10 @@ I use sequelpro to connect to the database
 
 default database credentials
 
+```
 host: 127.0.0.1
-
 user: root
-
 pass: *empty*
+```
 
 [MariaDB](https://mariadb.org/)
