@@ -3,22 +3,6 @@
 This is my setup when i need to setup a new mac for webdev.
 It includes the basic to get php running with Valet, Node with NVM, OH MY ZSH on the terminal and the apps i use
 
-## Apps i use
-
-  [1password](https://1password.com/downloads/),
-  [Sketch](https://www.sketchapp.com/),
-  [VS Code](https://code.visualstudio.com/Download),
-  [Chrome](https://www.google.com/chrome/browser/desktop),
-  [Firefox](https://www.mozilla.org/en-US/firefox/new/),
-  [iTerm2](https://www.iterm2.com),
-  [Clipy](https://github.com/Clipy/Clipy),
-  [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
-  [Slack](https://slack.com/downloads),
-  [Whatsapp](https://www.whatsapp.com/download/),
-  [Skype](https://www.skype.com/en/),
-  [Spotify](https://www.spotify.com/br/download/mac/)
-
-
 ## Update Mac OS
 
 Just do it. Sit back and relax, it might take a while.
@@ -35,6 +19,22 @@ System Preferences > Keyboard > Shortcuts > Mission Control > Move to left space
 System Preferences > Keyboard > Shortcuts > Mission Control > Move to right space = cmd + →  
 
 
+## Install the Apps
+
+  [1password](https://1password.com/downloads/),
+  [Sketch](https://www.sketchapp.com/),
+  [VS Code](https://code.visualstudio.com/Download),
+  [Chrome](https://www.google.com/chrome/browser/desktop),
+  [Firefox](https://www.mozilla.org/en-US/firefox/new/),
+  [iTerm2](https://www.iterm2.com),
+  [Clipy](https://github.com/Clipy/Clipy),
+  [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
+  [Slack](https://slack.com/downloads),
+  [Whatsapp](https://www.whatsapp.com/download/),
+  [Skype](https://www.skype.com/en/),
+  [Spotify](https://www.spotify.com/br/download/mac/)
+  
+
 ## Installing Oh-my-zsh 
 
 [http://ohmyz.sh/](http://ohmyz.sh/)
@@ -46,6 +46,12 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ```
 
 Optional: Install [Honukai Theme](https://github.com/oskarkrawczyk/honukai-iterm-zsh)
+
+## VS Code
+
+To allow commands like `code file.ext` in the terminal.  
+
+Open VSCode then open the Command Palette (`⇧⌘P`) and type `shell command` to find the `Shell Command: Install 'code' command in PATH command`.
 
 
 ## Dock spacing
@@ -82,19 +88,6 @@ Homebrew provides a system for managing graphical and command line software for 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew --version
 brew doctor
-```
-
-## Install the Apps
-
-```
-brew cask install \
-visual-studio-code \
-slack \
-google-chrome \
-firefox-developer-edition \
-iterm2 \
-1password \
-sketch
 ```
 
 ## Install Git
