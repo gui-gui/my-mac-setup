@@ -174,7 +174,7 @@ php PATH/TO/COMPOSER/composer-setup.php --install-dir=/usr/local/bin --filename=
 
 and rembember to change `PATH/TO/COMPOSER` to its correct path.  
 
-After Valet is installed
+#### After Valet is installed
 
 ```
 cd ~/Dev/sites
@@ -194,13 +194,13 @@ valet park
 
 Now every project (i.e. folder) inside `~/Dev/sites` will be served by Valet at `Http://[project-name].localhost`.
 
-If you need a secure connection (TLS using HTTP/2) you can run:
+#### If you need a secure connection (TLS using HTTP/2) you can run:
 
 ```
 valet secure [project-name]
 ```
 
-Now to allow sharing sites on your Local Network
+#### Now to allow sharing sites on your Local Network
 
 
 ```
@@ -225,7 +225,7 @@ then:
 valet restart
 ```
 
-If using HTTPs
+#### If allowing local network sharing using HTTPs
 
 ```
 code ~/.config/valet/Nginx/app-name.localhost
