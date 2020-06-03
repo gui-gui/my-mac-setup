@@ -1,7 +1,7 @@
 # Web Development setup on mac (PHP and NODE)
 
 This is my setup when i need to setup a new mac for webdev.
-It includes the basic to get php running with Valet, Node with NVM, OH MY ZSH on the terminal and the apps i use
+It includes the basics to get php running with Valet, Node with NVM, OH MY ZSH on the terminal and the apps i use
 
 ## Update Mac OS
 
