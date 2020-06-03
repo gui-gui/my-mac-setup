@@ -34,6 +34,12 @@ System Preferences > Keyboard > Shortcuts > Mission Control > Move to right spac
   [Skype](https://www.skype.com/en/),
   [Spotify](https://www.spotify.com/br/download/mac/)
   
+  Optional for UI/UX: 
+  
+  [Sketch](https://www.sketch.com/get/),
+  [Affinity Designer, Photo, Publisher](https://store.serif.com/en-us/sign-in),
+
+  
 
 ## Installing Oh-my-zsh 
 
