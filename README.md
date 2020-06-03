@@ -180,11 +180,76 @@ After Valet is installed
 cd ~/Dev/sites
 ```
 
-Create the folders if nedeed
+Create the folders if nedeed, then run:
 
 ```
 valet tld localhost
+```
+
+It will prompt for password, and then reconfigure Dnsmasq and restart php and nginx
+
+```
 valet park
 ```
+
+Now every project (i.e. folder) inside `~/Dev/sites` will be served by Valet at `Http://[project-name].localhost`.
+
+If you need a secure connection (TLS using HTTP/2) you can run:
+
+```
+valet secure [project-name]
+```
+
+Now to allow sharing sites on your Local Network
+
+
+```
+code /usr/local/etc/nginx/valet/valet.conf
+```
+
+change line 
+
+```
+listen 127.0.0.1:80 :default_server;
+```
+
+to:
+
+```
+listen *:80 :default_server;
+```
+
+then: 
+
+```
+valet restart
+```
+
+If using HTTPs
+
+```
+code ~/.config/valet/Nginx/app-name.localhost
+```
+
+change line 
+
+```
+listen 127.0.0.1:80;
+```
+
+to:
+
+```
+listen *:80;
+```
+
+then: 
+
+```
+valet restart
+```
+
+For other settings like changing php version, sharing sites via Ngrok, visit the documentation again.
+
 
 ## That's it. Done.
