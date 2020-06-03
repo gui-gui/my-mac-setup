@@ -172,7 +172,19 @@ Worth mentioning that during `install composer` you can install it globally by:
 php PATH/TO/COMPOSER/composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 
-and rembember to change `PATH/TO/COMPOSER` to its correct path.
+and rembember to change `PATH/TO/COMPOSER` to its correct path.  
 
+After Valet is installed
+
+```
+cd ~/Dev/sites
+```
+
+Create the folders if nedeed
+
+```
+valet tld localhost
+valet park
+```
 
 ## That's it. Done.
