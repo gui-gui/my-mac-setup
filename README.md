@@ -225,6 +225,9 @@ then:
 valet restart
 ```
 
+you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].localhost`
+
+
 #### If allowing local network sharing using HTTPs
 
 ```
