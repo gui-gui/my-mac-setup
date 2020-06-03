@@ -79,7 +79,9 @@ killall Dock
 
 Install Xcode via Apple's App Store
 
-### install command line tools
+### Command line tools
+
+After Xcode is installed run this on your terminal
 
 ```
 xcode-select --install
