@@ -37,7 +37,7 @@ System Preferences > Keyboard > Shortcuts > Mission Control > Move to right spac
   Optional for UI/UX: 
   
   [Sketch](https://www.sketch.com/get/),
-  [Affinity Designer, Photo, Publisher](https://store.serif.com/en-us/sign-in),
+  [Affinity Designer, Photo and Publisher](https://store.serif.com/en-us/sign-in)
 
   
 
