@@ -183,7 +183,7 @@ cd ~/Dev/sites
 Create the folders if nedeed, then run:
 
 ```
-valet tld localhost
+valet tld local
 ```
 
 It will prompt for password, and then reconfigure Dnsmasq and restart php and nginx
@@ -192,7 +192,7 @@ It will prompt for password, and then reconfigure Dnsmasq and restart php and ng
 valet park
 ```
 
-Now every project (i.e. folder) inside `~/Dev/sites` will be served by Valet at `Http://[project-name].localhost`.
+Now every project (i.e. folder) inside `~/Dev/sites` will be served by Valet at `Http://[project-name].local`.
 
 #### If you need a secure connection (TLS using HTTP/2) you can run:
 
@@ -207,7 +207,7 @@ valet secure [project-name]
 code /usr/local/etc/nginx/valet/valet.conf
 ```
 
-change line 
+Change line 
 
 ```
 listen 127.0.0.1:80 :default_server;
@@ -219,13 +219,13 @@ to:
 listen 80 :default_server;
 ```
 
-now to [solve a problem](https://github.com/laravel/valet/issues/440#issuecomment-579830736), at the time of writting of this guide, we need to modify valet's `server.php`
+Now to [solve a problem](https://github.com/laravel/valet/issues/440#issuecomment-579830736), at the time of writting of this guide, we need to modify valet's `server.php`
 
 ```
  code ~/.composer/vendor/laravel/valet/server.php code ~/.composer/vendor/laravel/valet/server.php
 ```
 
-and add 
+And add 
 
 ```
 /**
@@ -244,7 +244,7 @@ if (preg_match('/^([0-9]+\.){3}[0-9]+$/', $_SERVER['HTTP_HOST'])) {
 }
 ```
 
-after this piece of code:
+After this piece of code:
 
 ```
 $valetConfig = json_decode(
@@ -258,15 +258,7 @@ Save and then restart valet
 valet restart
 ```
 
-you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].localhost`
-then: 
-
-```
-valet restart
-```
-
-now you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].localhost`
-
+Now you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].local/`
 
 For other settings like changing php version, sharing sites via Ngrok, visit the documentation again.
 
