@@ -263,7 +263,7 @@ Now you can access the app using your mac's local ip (in this example `192.168.0
 192.168.0.5/[app-name].local/
 ```
 
-For other settings like changing php version, sharing sites via Ngrok, visit the documentation again.
+For other settings like changing php version, sharing sites via Ngrok, visit [valet's installation guide](https://laravel.com/docs/7.x/valet#installation)
 
 
-## That's it. Done.
+## That's it. Done. :)
