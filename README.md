@@ -216,41 +216,57 @@ listen 127.0.0.1:80 :default_server;
 to:
 
 ```
-listen *:80 :default_server;
+listen 80 :default_server;
 ```
 
-then: 
+now to [solve a problem](https://github.com/laravel/valet/issues/440#issuecomment-579830736), at the time of writting of this guide, we need to modify valet's `server.php`
+
+```
+ code ~/.composer/vendor/laravel/valet/server.php code ~/.composer/vendor/laravel/valet/server.php
+```
+
+and add 
+
+```
+/**
+ * If the HTTP_HOST is an IP address, check the start of the REQUEST_URI for a
+ * valid hostname, extract and use it as the effective HTTP_HOST in place
+ * of the IP. It enables the use of Valet in a local network.
+ */
+if (preg_match('/^([0-9]+\.){3}[0-9]+$/', $_SERVER['HTTP_HOST'])) {
+    $uri = ltrim($_SERVER['REQUEST_URI'], '/');
+
+    if (preg_match('/^[-.0-9a-zA-Z]+\.'. $valetConfig['tld'] .'/', $uri, $matches)) {
+        $host = $matches[0];
+        $_SERVER['HTTP_HOST'] = $host;
+        $_SERVER['REQUEST_URI'] = str_replace($host, '', $uri);
+    }
+}
+```
+
+after this piece of code:
+
+```
+$valetConfig = json_decode(
+    file_get_contents(VALET_HOME_PATH.'/config.json'), true
+);
+```
+
+Save and then restart valet
 
 ```
 valet restart
 ```
 
 you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].localhost`
-
-
-#### If allowing local network sharing using HTTPs
-
-```
-code ~/.config/valet/Nginx/app-name.localhost
-```
-
-change line 
-
-```
-listen 127.0.0.1:80;
-```
-
-to:
-
-```
-listen *:80;
-```
-
 then: 
 
 ```
 valet restart
 ```
+
+now you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].localhost`
+
 
 For other settings like changing php version, sharing sites via Ngrok, visit the documentation again.
 
