@@ -228,7 +228,7 @@ Now to [solve a problem](https://github.com/laravel/valet/issues/440#issuecommen
 
 And add 
 
-```
+```php
 /**
  * If the HTTP_HOST is an IP address, check the start of the REQUEST_URI for a
  * valid hostname, extract and use it as the effective HTTP_HOST in place
@@ -247,7 +247,7 @@ if (preg_match('/^([0-9]+\.){3}[0-9]+$/', $_SERVER['HTTP_HOST'])) {
 
 After this piece of code:
 
-```
+```php
 $valetConfig = json_decode(
     file_get_contents(VALET_HOME_PATH.'/config.json'), true
 );
@@ -255,7 +255,7 @@ $valetConfig = json_decode(
 
 Save and then restart valet
 
-```
+```sh
 valet restart
 ```
 
