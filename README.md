@@ -39,7 +39,7 @@ System Preferences > Keyboard > Shortcuts > Mission Control > Move to right spac
 
 [http://ohmyz.sh/](http://ohmyz.sh/)
 
-Open iterm2
+Open terminal
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
