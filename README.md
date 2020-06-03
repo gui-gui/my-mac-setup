@@ -257,7 +257,11 @@ Save and then restart valet
 valet restart
 ```
 
-Now you can then access the app using your local ip, in this example `192.168.0.5`, with the url `192.168.0.5/[app-name].local/`
+Now you can access the app using your mac's local ip (in this example `192.168.0.5`)
+
+```
+192.168.0.5/[app-name].local/
+```
 
 For other settings like changing php version, sharing sites via Ngrok, visit the documentation again.
 
