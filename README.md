@@ -18,7 +18,6 @@ It includes the basic to get php running with Valet, Node with NVM, OH MY ZSH on
   [Skype](https://www.skype.com/en/),
   [Spotify](https://www.spotify.com/br/download/mac/)
 
--
 
 ### Update Mac OS
 
