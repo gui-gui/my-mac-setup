@@ -20,10 +20,12 @@ It includes the basic to get php running with Valet, Node with NVM, OH MY ZSH on
 
 -
 
-### -> Update Mac OS to the latest version
+### Update Mac OS
+
+Just do it. Sit back and relax, it might take a while.
 
 
-### -> Oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/)
+### Oh-my-zsh [http://ohmyz.sh/](http://ohmyz.sh/)
 
 Abrir iterm2
 
@@ -37,7 +39,7 @@ Install [Honukai Theme](https://github.com/oskarkrawczyk/honukai-iterm-zsh)
 
 -
 
-### -> Dock spacing
+### Dock spacing
 
 Add an empty separator to the dock.
 Enter the code below in the terminal. One for each separator.
@@ -52,17 +54,17 @@ Reset the dock
 killall Dock
 ```
 
-### -> Xcode setup
+### Xcode setup
 
 Install Xcode via Apple's App Store
 
-### -> Then install command line tools
+### Then install command line tools
 
 ```
 xcode-select --install
 ```
 
-### -> Install HomeBrew [http://brew.sh/](http://bew.sh)
+### Install HomeBrew [http://brew.sh/](http://bew.sh)
 
 Homebrew provides a system for managing graphical and command line software for macOS, enabling you to quickly install and update the tools and libraries that you need.
 
@@ -73,7 +75,7 @@ brew --version
 brew doctor
 ```
 
-### -> Install the Apps
+### Install the Apps
 
 ```
 brew cask install \
@@ -86,7 +88,7 @@ iterm2 \
 sketch
 ```
 
-### -> Install Git
+### Install Git
 
 ```
 brew install git
@@ -99,7 +101,7 @@ git config --global user.name "Your Name"
 git config --global user.email "you@your-domain.com"
 ```
 
-### -> Generate SSH key
+### Generate SSH key
 
 run on terminal:
 
