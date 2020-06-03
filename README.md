@@ -23,16 +23,16 @@ It includes the basic to get php running with Valet, Node with NVM, OH MY ZSH on
 
 Just do it. Sit back and relax, it might take a while.
 
-## Trackpad
+## Trackpad  
 
-System Preferences > Trackpad > Point & Click > Tap to Click [on]
-System Preferences > Trackpad > Scroll & Zoom > Scroll Direction: Natural [off]
-System Preferences > Acessibility > Pointer Control > Trackpad options > Enable Dragging [on] (without drag lock)
+System Preferences > Trackpad > Point & Click > Tap to Click [on]  
+System Preferences > Trackpad > Scroll & Zoom > Scroll Direction: Natural [off]  
+System Preferences > Acessibility > Pointer Control > Trackpad options > Enable Dragging [on] (without drag lock)  
 
-## Keyboad shortcuts
-
-System Preferences > Keyboard > Shortcuts > Mission Control > Move to left space = cmd + ←
-System Preferences > Keyboard > Shortcuts > Mission Control > Move to right space = cmd + →
+## Keyboad shortcuts  
+  
+System Preferences > Keyboard > Shortcuts > Mission Control > Move to left space = cmd + ←  
+System Preferences > Keyboard > Shortcuts > Mission Control > Move to right space = cmd + →  
 
 
 ## Installing Oh-my-zsh 
