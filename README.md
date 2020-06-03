@@ -200,7 +200,7 @@ Now every project (i.e. folder) inside `~/Dev/sites` will be served by Valet at 
 valet secure [project-name]
 ```
 
-#### Now to allow sharing sites on your Local Network
+#### Now to allow sharing sites on your Local Network (via HTTP)
 
 
 ```
