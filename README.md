@@ -222,7 +222,7 @@ listen 80 :default_server;
 Now to [solve a problem](https://github.com/laravel/valet/issues/440#issuecomment-579830736), at the time of writting of this guide, we need to modify valet's `server.php`
 
 ```
- code ~/.composer/vendor/laravel/valet/server.php code ~/.composer/vendor/laravel/valet/server.php
+ code ~/.composer/vendor/laravel/valet/server.php
 ```
 
 And add 
