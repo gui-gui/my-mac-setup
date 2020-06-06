@@ -59,6 +59,9 @@ To allow commands like `code file.ext` in the terminal.
 
 Open VSCode then open the Command Palette (`⇧⌘P`) and type `shell command` to find the `Shell Command: Install 'code' command in PATH command`.
 
+Install at least these extensions
+
+Eslint, Path Intellisense, Pretier
 
 ## Dock spacing
 
