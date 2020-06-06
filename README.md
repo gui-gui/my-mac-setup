@@ -61,7 +61,7 @@ Open VSCode then open the Command Palette (`⇧⌘P`) and type `shell command` t
 
 Install at least these extensions
 
-Eslint, Path Intellisense, Pretier
+`Eslint`, `Path Intellisense`, `Pretier`
 
 ## Dock spacing
 
