@@ -62,7 +62,89 @@ Open VSCode then open the Command Palette (`⇧⌘P`) and type `shell command` t
 
 Install at least these extensions
 
-`Eslint`, `Path Intellisense`, `Prettier`, `Debugger for Chrome`, `JavaScript Debugger (Nightly)`
+`Eslint`, `Path Intellisense`, `Prettier`, `Debugger for Chrome`, `JavaScript Debugger (Nightly)`, `Live Server`, `EditorConfig for VS Code`, `Color Highlight`, `DotENV`, `Material Icon Theme`, `GitLens`
+
+Settings 
+
+``` json
+{
+    "terminal.integrated.fontSize": 13,
+
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "newUntitledFile",
+
+    "editor.tabSize": 2,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 18,
+    "editor.fontLigatures": false,
+
+    "explorer.compactFolders": false,
+    "editor.renderLineHighlight":"gutter",
+    "workbench.editor.labelFormat": "short",
+    "extensions.ignoreRecommendations": true,
+
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "never",
+
+    "breadcrumbs.enabled": true,
+    "editor.parameterHints.enabled": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    "editor.rulers": [80, 120],
+
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+
+    "files.associations": {
+        ".sequelizerc": "javascript",
+        ".stylelintrc": "json",
+        ".prettierrc": "json"
+    },
+
+    "window.zoomLevel": 0,
+
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+
+    "gitlens.codeLens.recentChange.enabled": false,
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.enabled": false,
+
+    "git.enableSmartCommit": true,
+
+    "typescript.tsserver.log": "verbose",
+    "javascript.suggest.autoImports": true,
+    "typescript.suggest.autoImports": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "material-icon-theme.activeIconPack": "nest",
+
+    "material-icon-theme.folders.associations": {
+        "infra": "app",
+        "entities": "class",
+        "schemas": "class",
+        "typeorm": "database",
+        "repositories": "mappings",
+        "http": "container",
+        "migrations": "tools",
+        "modules": "components",
+        "implementations": "core",
+        "dtos": "typescript",
+        "fakes": "mock",
+        "websockets": "pipe",
+        "protos": "pipe",
+        "grpc": "pipe"
+    },
+
+    "material-icon-theme.files.associations": {
+        "ormconfig.json": "database",
+        "tsconfig.json": "tune",
+        "*.proto": "3d"
+    }
+}
+```
 
 ## Dock spacing
 
