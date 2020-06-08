@@ -31,6 +31,7 @@ System Preferences > Keyboard > Shortcuts > Mission Control > Move to right spac
   [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
   [Slack](https://slack.com/downloads),
   [Whatsapp](https://www.whatsapp.com/download/),
+  [Discord](https://discord.com/)
   [Skype](https://www.skype.com/en/),
   [Spotify](https://www.spotify.com/br/download/mac/)
   
