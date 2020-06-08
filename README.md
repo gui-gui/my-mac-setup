@@ -60,9 +60,13 @@ To allow commands like `code file.ext` in the terminal.
 
 Open VSCode then open the Command Palette (`⇧⌘P`) and type `shell command` to find the `Shell Command: Install 'code' command in PATH command`.
 
-Install at least these extensions
+Install these extensions
 
-`Eslint`, `Path Intellisense`, `Prettier`, `Debugger for Chrome`, `JavaScript Debugger (Nightly)`, `Live Server`, `EditorConfig for VS Code`, `Color Highlight`, `DotENV`, `Material Icon Theme`, `GitLens`
+`Eslint`, `Path Intellisense`, `Prettier`, `Debugger for Chrome`, `JavaScript Debugger (Nightly)`
+
+Optional extensions
+
+`Live Share`, `Color Highlight`, `Live Server`, `EditorConfig for VS Code`, `DotENV`, `Material Icon Theme`, `GitLens`, `graphql`
 
 Settings 
 
