@@ -20,7 +20,7 @@ System Preferences > Keyboard > Shortcuts > Mission Control > Move to right spac
 
 ## Mission Control
 
-System Preferences > Mission contorl > Automatically rearrange spaces based on most recent use [off]
+System Preferences > Mission control > Automatically rearrange spaces based on most recent use [off]
 
 
 ## Install the Apps
