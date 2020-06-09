@@ -15,8 +15,12 @@ System Preferences > Acessibility > Pointer Control > Trackpad options > Enable 
 
 ## Keyboad shortcuts  
   
-System Preferences > Keyboard > Shortcuts > Mission Control > Move to left space = cmd + ←  
-System Preferences > Keyboard > Shortcuts > Mission Control > Move to right space = cmd + →  
+System Preferences > Keyboard > Shortcuts > Mission Control > Move to left space = cmd⌘ + ←  
+System Preferences > Keyboard > Shortcuts > Mission Control > Move to right space = cmd⌘ + →  
+
+## Mission Control
+
+System Preferences > Mission contorl > Automatically rearrange spaces based on most recent use [off]
 
 
 ## Install the Apps
