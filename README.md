@@ -358,6 +358,16 @@ Now you can access the app using your mac's local ip (in this example `192.168.0
 For other settings like changing php version, sharing sites via Ngrok, visit [valet's installation guide](https://laravel.com/docs/7.x/valet#installation)
 
 
+### Last and maybe least
+
+Shopify development worflow, using [Themekit](https://shopify.github.io/themekit/).
+
+```shell
+brew tap shopify/shopify
+brew install themekit
+```
+
+
 ### That's it. Done. 
 
 :facepunch:
