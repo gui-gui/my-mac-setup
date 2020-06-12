@@ -35,10 +35,10 @@ System Preferences > Mission control > Automatically rearrange spaces based on m
   [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
   [Slack](https://slack.com/downloads),
   [Whatsapp](https://www.whatsapp.com/download/),
-  [Discord](https://discord.com/)
+  [Discord](https://discord.com/),
   [Skype](https://www.skype.com/en/),
   [Spotify](https://www.spotify.com/br/download/mac/),
-  [MongoDB Compass](https://www.mongodb.com/try/download/compass)
+  [MongoDB Compass](https://www.mongodb.com/try/download/compass),
   [Insomnia](https://insomnia.rest/)  
 
   Optional for UI/UX: 
