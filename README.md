@@ -1,6 +1,5 @@
 # Web Development setup on mac
 
-Node, PHP, mongodb
 This is my setup when i need to setup a new mac for webdev.
 It includes the basics to get php running with Valet, Node with NVM, OH MY ZSH on the terminal and the apps i use
 
