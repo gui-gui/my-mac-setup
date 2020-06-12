@@ -1,5 +1,6 @@
-# Web Development setup on mac (NODE and PHP)
+# Web Development setup on mac
 
+Node, PHP, mongodb
 This is my setup when i need to setup a new mac for webdev.
 It includes the basics to get php running with Valet, Node with NVM, OH MY ZSH on the terminal and the apps i use
 
@@ -37,8 +38,10 @@ System Preferences > Mission control > Automatically rearrange spaces based on m
   [Whatsapp](https://www.whatsapp.com/download/),
   [Discord](https://discord.com/)
   [Skype](https://www.skype.com/en/),
-  [Spotify](https://www.spotify.com/br/download/mac/)
-  
+  [Spotify](https://www.spotify.com/br/download/mac/),
+  [MongoDB Compass](https://www.mongodb.com/try/download/compass)
+  [Insomnia](https://insomnia.rest/)  
+
   Optional for UI/UX: 
   
   [Sketch](https://www.sketch.com/get/),
@@ -362,13 +365,20 @@ Now you can access the app using your mac's local ip (in this example `192.168.0
 For other settings like changing php version, sharing sites via Ngrok, visit [valet's installation guide](https://laravel.com/docs/7.x/valet#installation)
 
 
-### Last and maybe least
+### Shopify cli
 
 Shopify development worflow, using [Themekit](https://shopify.github.io/themekit/).
 
 ```shell
 brew tap shopify/shopify
 brew install themekit
+```
+
+### Mongodb
+
+```shell
+brew tap mongodb/brew
+brew install mongodb-community@4.2
 ```
 
 
