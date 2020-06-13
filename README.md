@@ -380,6 +380,9 @@ brew tap mongodb/brew
 brew install mongodb-community@4.2
 ```
 
+### Logitech options
+
+Download [logitech options](https://www.logitech.com/en-us/product/options) for keyboard.
 
 ### That's it. Done. 
 
