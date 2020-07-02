@@ -47,6 +47,32 @@ System Preferences > Mission control > Automatically rearrange spaces based on m
   [Affinity Designer, Photo and Publisher](https://store.serif.com/en-us/sign-in)
 
   
+## Dock spacing
+
+Add an empty separator to the dock.
+Enter the code below in the terminal. One for each separator.
+
+```
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
+```
+
+Reset the dock
+
+```
+killall Dock
+```
+
+## Xcode setup
+
+Install Xcode via Apple's App Store
+
+### Command line tools
+
+After Xcode is installed run this on your terminal
+
+```
+xcode-select --install
+```
 
 ## Installing Oh-my-zsh 
 
@@ -156,32 +182,6 @@ Settings
 }
 ```
 
-## Dock spacing
-
-Add an empty separator to the dock.
-Enter the code below in the terminal. One for each separator.
-
-```
-defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="spacer-tile";}'
-```
-
-Reset the dock
-
-```
-killall Dock
-```
-
-## Xcode setup
-
-Install Xcode via Apple's App Store
-
-### Command line tools
-
-After Xcode is installed run this on your terminal
-
-```
-xcode-select --install
-```
 
 ## Install HomeBrew [http://brew.sh/](http://bew.sh)
 
