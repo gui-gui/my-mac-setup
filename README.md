@@ -200,18 +200,18 @@ brew doctor
 brew install git
 ```
 
-After installing git, set your github details:  
+After installing git, set your git details:  
 
-If you have only one git user:  
+**If you have only one git user:**  
 
 ```
 git config --global user.name "Your Name"
 git config --global user.email "you@your-domain.com"
 ```
 
-For multiple git users: 
+**For multiple git users**  
 
-create a git config at ~/.gitconfig
+Create a git config at ~/.gitconfig
 
 ```
 [user]
