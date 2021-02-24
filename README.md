@@ -190,6 +190,17 @@ Homebrew provides a system for managing graphical and command line software for 
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+If you have M1 Chip Mac run the below command, close terminal and open the terminal again
+
+```
+echo "export PATH=/opt/homebrew/bin:$PATH" >> ~/.zshrc
+```
+
+To check if it worked
+
+```
 brew --version
 brew doctor
 ```
