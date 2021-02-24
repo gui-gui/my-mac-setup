@@ -35,14 +35,14 @@ System Preferences > Mission control > Automatically rearrange spaces based on m
   [The Unarchiver](http://unarchiver.c3.cx/unarchiver),
   [Slack](https://slack.com/downloads),
   [Whatsapp](https://www.whatsapp.com/download/),
-  [Discord](https://discord.com/),
-  [Skype](https://www.skype.com/en/),
   [Spotify](https://www.spotify.com/br/download/mac/),
-  [MongoDB Compass](https://www.mongodb.com/try/download/compass),
   [Insomnia](https://insomnia.rest/)  
 
   Optional for UI/UX: 
-  
+
+  [Discord](https://discord.com/),
+  [Skype](https://www.skype.com/en/),
+  [MongoDB Compass](https://www.mongodb.com/try/download/compass),
   [Sketch](https://www.sketch.com/get/),
   [Affinity Designer, Photo and Publisher](https://store.serif.com/en-us/sign-in)
 
@@ -104,14 +104,14 @@ Settings
 
 ``` json
 {
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 12,
 
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
 
     "editor.tabSize": 2,
-    "editor.fontSize": 13,
-    "editor.lineHeight": 18,
+    "editor.fontSize": 12,
+    "editor.lineHeight": 17,
     "editor.fontLigatures": false,
 
     "explorer.compactFolders": false,
@@ -183,13 +183,13 @@ Settings
 ```
 
 
-## Install HomeBrew [http://brew.sh/](http://bew.sh)
+## Install HomeBrew [http://brew.sh/](http://brew.sh)
 
 Homebrew provides a system for managing graphical and command line software for macOS, enabling you to quickly install and update the tools and libraries that you need.
 
 
 ```
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew --version
 brew doctor
 ```
@@ -200,11 +200,33 @@ brew doctor
 brew install git
 ```
 
-After installing git, set your github details before you create or clone repositories on a new system. This requires two commands:
+After installing git, set your github details:  
+
+If you have only one git user:  
 
 ```
 git config --global user.name "Your Name"
 git config --global user.email "you@your-domain.com"
+```
+
+For multiple git users: 
+
+create a git config at ~/.gitconfig
+
+```
+[user]
+    name = John Doe
+    email = john@doe.tld
+
+[includeIf "gitdir:~/work/"]
+    path = ~/work/.gitconfig
+```
+
+Create a work specific config ~/work/.gitconfig (anything inside this subfolder will use this config)
+
+```
+[user]
+    email = john.doe@company.tld
 ```
 
 ## Generate SSH key
@@ -220,7 +242,7 @@ Then run the following command (copies your ssh key to the clipboard):
 
 
 ```
-pbcopy < ~/.ssh/id_rsa.pub
+cat ~/.ssh/id_rsa.pub | pbcopy
 ```
 
 You can now go to GitHub, click on your profile pic, and go to settings/SSH and GPG Keys. click ‘New SSH Key’.
@@ -243,21 +265,19 @@ Then just install the need node version
 
 ```
 nvm install stable
-nvm alias default stable
-```
+```  
 
-Now you can install Yarn
-
-```
-brew install yarn --ignore-dependencies
-```
-
-And if you feel like it, you can update NPM
+Update NPM  
 
 ```
 npm install npm@latest -g
 ```
 
+Now you can install Yarn
+
+```
+npm install -g yarn
+```
 
 ## Composer and Valet for PHP
 
