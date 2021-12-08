@@ -105,13 +105,13 @@ Settings
 ``` json
 {
     "terminal.integrated.fontSize": 12,
-
-    "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
 
     "editor.tabSize": 2,
-    "editor.fontSize": 12,
-    "editor.lineHeight": 17,
+    "editor.fontSize": 13,
+    "editor.lineHeight": 19,
     "editor.fontLigatures": false,
 
     "explorer.compactFolders": false,
@@ -139,11 +139,29 @@ Settings
         ".prettierrc": "json"
     },
 
-    "window.zoomLevel": 0,
+    "css.validate": false,
+
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
 
     "emmet.syntaxProfiles": {
-        "javascript": "jsx"
+        "javascript": "jsx",
+
     },
+
+    "emmet.includeLanguages": {
+        "html.erb": "html",
+        "erb": "html",
+        "vue": "html",
+    },
+    
+
+    "tailwindCSS.includeLanguages": {
+        "html.erb": "html",
+        "erb": "html",
+        "vue": "html",
+    },
+      
 
     "gitlens.codeLens.recentChange.enabled": false,
     "gitlens.codeLens.authors.enabled": false,
@@ -178,7 +196,12 @@ Settings
         "ormconfig.json": "database",
         "tsconfig.json": "tune",
         "*.proto": "3d"
-    }
+    },
+    "editor.tabCompletion": "on",
+    "editor.snippetSuggestions": "top",
+    "editor.accessibilitySupport": "off",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.minimap.enabled": false
 }
 ```
 
